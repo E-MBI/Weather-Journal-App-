@@ -1,111 +1,144 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+body {
+  background: #fffff8;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+#app {
+  display: grid;
+  background: linear-gradient(45deg, #242424, #673ab7bf);
+  color: #f0d43a;
+  justify-content: center;
+  grid-gap: 1em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
-.holder{
-
+.holder.headline {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  word-spacing: 17px;
+  color: #ffc107;
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
+.entry {
+  background: linear-gradient(45deg, #00bcd4, #4caf50);
+  height: 46vh;
+  padding: 30px;
+  margin: 20px;
 }
 
-#entryHolder{
-
+#entryHolder {
+  margin: 30px 0px;
+  padding: 30px 0px;
 }
 
-#date{
-
+#date {
+  color: #f7f7f7;
+  font-weight: 900;
+  font-size: 19px;
+  width: 38%;
+  padding: 10px;
+  margin: -20px 0px 24px 20px;
+  box-shadow: 3px 4px 4px 3px #9c27b08c;
+}
+.title {
+  color: #ffc107;
+  font-weight: 900;
+  font-size: 36px;
+  width: fit-content;
+  border-radius: 17px;
+  padding: 10px;
+  box-shadow: 3px 4px 4px 3px #009688;
 }
 
-#temp{
-
+#temp {
+  color: #f7f7f7;
+  font-weight: 900;
+  font-size: 19px;
+  padding: 10px;
+  width: 30%;
+  height: 32px;
+  margin: 33px 0px 24px 115px;
+  box-shadow: 3px -3px 4px 3px #e91e63ad;
 }
 
-#content{
-
+#feel {
+  color: #f7f7f7;
+  font-weight: 900;
+  font-size: 19px;
+  width: 16%;
+  padding: 10px;
+  margin-left: 39%;
+  box-shadow: 3px 3px 4px 3px #01897d;
+  overflow: hidden;
 }
 
-.headline {
-
-}
-.title{
-
+span.cont_sp {
+  color: #1c5f59;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
+label {
+  display: block;
+  font-size: 27px;
 }
 
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
+input {
+  display: block;
+  height: 60px;
+  width: 320px;
+  background: #22b2da;
+  color: #f0d43a;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
+button {
+  width: 400px;
+  height: 100px;
+  background: #3b4a6b;
+  color: #f0d43a;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
 }
-h1{
-    font-size: 36px;
+h1 {
+  font-size: 36px;
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+textarea {
+  background: #22b2da;
+  color: #f0d43a;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}

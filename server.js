@@ -22,3 +22,16 @@ app.use(express.static("website"));
 app.listen(port, () => {
   console.log("Y're Server Is Runing Now  At Port => " + "  " + `${port}`);
 });
+//get route server side ,return endpoint data
+app.get("/getTempData", (req, res) => {
+  //when user sen req the rep sen the object of js projectData
+  res.send(projectData);
+});
+
+//post req that save data on server
+app.post("/setTempData", (req, res) => {
+  projectData.date = req.body.date;
+  projectData.temp = req.body.temp;
+  projectData.feelings = req.body.feelings;
+  res.end();
+});
